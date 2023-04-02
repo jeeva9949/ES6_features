@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+</head>
+<body>
+    <h2>new window</h2>
+    <button onclick="new_window()">open window</button>
+    <button onclick="close_window()">close window</button>
+
+    <script>
+        let ref;
+        function new_window(){
+            ref=window.open("https://www.facebook.com","_blank","width=300,height=400,left=300,top=200")
+        }
+        function close_window(){
+            ref.close()
+        }
+    </script>
+</body>
+</html>
